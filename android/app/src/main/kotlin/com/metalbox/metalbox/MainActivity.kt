@@ -1,4 +1,4 @@
-package dev.danvickmiller.flutterboilerplate
+package com.metalbox.metalbox
 
 import io.flutter.embedding.android.FlutterActivity
 
