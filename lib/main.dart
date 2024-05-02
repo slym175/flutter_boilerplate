@@ -9,10 +9,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get_it/get_it.dart';
 
-import 'app.dart';
-import 'env.dart';
-import 'firebase_options.dart';
-import 'utils/http_client.dart';
+import 'package:metalbox/app.dart';
+import 'package:metalbox/env.dart';
+import 'package:metalbox/firebase_options.dart';
+import 'package:metalbox/utils/http_client.dart';
 
 void main() async {
   await runZonedGuarded(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-
-import 'models/post.dart';
-import 'services/dummy_service.dart';
+import 'package:metalbox/models/post.dart';
+import 'package:metalbox/services/dummy_service.dart';
+import 'package:metalbox/utils/extensions/ext_context.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -16,7 +16,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Flutter Boilerplate')),
+      appBar: AppBar(title: Text(context.locale.appName)),
       body: FutureBuilder(
         future: DummyService.getPostsWithCaching(),
         builder: (context, AsyncSnapshot<List<Post>> snapshot) {

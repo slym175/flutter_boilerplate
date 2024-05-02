@@ -1,6 +1,17 @@
 {
-    "helloWorld": "Hello World!",
-    "@helloWorld": {
-        "description": "The conventional newborn programmer greeting"
+  "appName": "Metalbox",
+  "notEmpty": "Không bỏ trống",
+  "passwordLength": "Mật khẩu phải lớn hơn {length} ký tự",
+  "@passwordLength": {
+    "description": "Độ dài mật khẩu tối thiểu",
+    "placeholders": {
+      "length": {
+        "type": "int"
+      }
     }
+  },
+  "passwordConfirmationError": "Mật khẩu không khớp",
+  "phoneError": "Số điện thoại không đúng định dạng",
+  "emailError": "Email không đúng định dạng",
+  "loading": "Đang tải"
 }
