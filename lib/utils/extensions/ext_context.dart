@@ -29,7 +29,7 @@ extension ExtContext on BuildContext {
     PageRouteAnimation? pageRouteAnimation,
     Duration? duration,
   }) async {
-    final Widget child = login ? const LoginPage() : page;
+    final child = login ? const LoginPage() : page;
     if (isNewTask) {
       return await Navigator.of(this).pushAndRemoveUntil(
         _router(

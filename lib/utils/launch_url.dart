@@ -27,7 +27,7 @@ class LaunchUrl {
   }
 
   static Future<dynamic> phone(String phone) async {
-    final Uri uri = Uri(
+    final uri = Uri(
       scheme: 'tel',
       path: '+84${phone.substring(1, phone.length)}',
     );
@@ -37,7 +37,7 @@ class LaunchUrl {
   }
 
   static Future<dynamic> makePhoneCall(String phoneNumber) async {
-    String url = 'tel:$phoneNumber';
+    final url = 'tel:$phoneNumber';
     await launchUrl(Uri.parse(url));
   }
 

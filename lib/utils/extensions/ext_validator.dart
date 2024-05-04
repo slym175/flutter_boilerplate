@@ -39,7 +39,7 @@ extension ExtString on String? {
     if (minLength != null &&
         validator.length < minLength &&
         type == TextInputType.visiblePassword) {
-      return msg ?? context.locale.passwordLength(minLength ?? 0);
+      return msg ?? context.locale.passwordLength(minLength);
     }
 
     /// check confirmation password
